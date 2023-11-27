@@ -1,0 +1,154 @@
+* {
+	background-color: #14141c;
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	text-shadow: 4px 4px 8px #000;
+	font-family: "Roboto Mono";
+	font-size: 14px;
+	overflow: hidden;
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #323050;
+	border-radius: 3px;
+}
+
+.parent {
+	display: grid;
+	grid-template-columns: 4fr 1fr;
+	grid-template-rows: 1fr 16fr 1fr;
+	grid-column-gap: 8px;
+	grid-row-gap: 8px;
+	width: 100vw;
+	height: 100vh;
+}
+
+.div1 {
+	grid-area: 1 / 1 / 2 / 2;
+	box-shadow: 0px 0px 4px #000;
+	background-color: #1f1f2b;
+}
+
+.div2 {
+	grid-area: 1 / 2 / 2 / 3;
+	box-shadow: 0px 0px 4px #000;
+	background-color: #1f1f2b;
+}
+
+.div3 {
+	grid-area: 2 / 1 / 3 / 2;
+	box-shadow: 0px 0px 4px #000;
+	background-color: #1f1f2b;
+}
+
+.div4 {
+	grid-area: 2 / 2 / 3 / 3;
+	box-shadow: 0px 0px 4px #000;
+	background-color: #1f1f2b;
+}
+
+.div5 {
+	grid-area: 3 / 1 / 4 / 2;
+	box-shadow: 0px 0px 4px #000;
+	background-color: #1f1f2b;
+}
+
+.div6 {
+	grid-area: 3 / 2 / 4 / 3;
+	box-shadow: 0px 0px 4px #000;
+	background-color: #1f1f2b;
+}
+
+.flex-item {
+	flex: 0 1 auto;
+}
+
+.textbox {
+	margin: .5vw;
+	background-color: #1f1f2b;
+}
+
+.active {
+	background-color: #303042;
+}
+
+.tab:hover {
+	background-color: #3c3c53;
+}
+
+#tabs {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: center;
+}
+
+#game-tab {
+	padding: 8px;
+	border-radius: 6px;
+	margin-left: 8px;
+	flex-grow: 0;
+	flex-shrink: 1;
+	flex-basis: auto;
+}
+
+#chat-tab {
+	padding: 8px;
+	border-radius: 6px;
+	margin-left: 8px;
+	flex-grow: 0;
+	flex-shrink: 1;
+	flex-basis: auto;
+}
+
+#system-tab {
+	padding: 8px;
+	border-radius: 6px;
+	margin-left: 8px;
+	flex-grow: 0;
+	flex-shrink: 1;
+	flex-basis: auto;
+}
+
+#playerlist-global {
+	height: 50%;
+	margin-bottom: 8px;
+	background-color: #1f1f2b;
+}
+
+#playerlist-local {
+	height: 50%;
+	background-color: #1f1f2b;
+}
+
+.notification {
+	animation: color-change 1s cubic-bezier(0.16, 1, 0.3, 1) infinite alternate;
+}
+
+.hidden {
+	display: none;
+}
+
+textarea, input {
+	outline: none;
+	border: none;
+}
+
+@keyframes color-change {
+	0% {
+		background: #14141c;
+	}
+
+	100% {
+		background: #611d88;
+	}
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
